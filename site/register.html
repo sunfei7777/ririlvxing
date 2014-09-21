@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" href="img/icn.png" />
 <title>日日旅行，旅行日上日日旅行</title>
+<script type="text/javascript" src="js/register.js"></script>
 <link href="css/public.css" type="text/css" rel="stylesheet" />
 <link href="css/register.css" type="text/css" rel="stylesheet" />
 </head>
@@ -37,9 +38,48 @@
     </div>
 </div>
 
+
+
+<div class="register-daohang">
+    <div class="logo">
+        <!-- <h1>
+            <a href="http://www.ririlvxing.com">
+                <img src="img/logo1.png">
+            </a>       
+        </h1> -->
+        <h2 class="tsl" data-phase-id="r_p_registration">
+            账户注册
+        </h2>
+    </div>
+    <div class="steps">
+    <ol>
+        <li class="active">
+            <i>
+                1
+            </i>
+            <span class="tsl" data-phase-id="r_p_createAccount">
+                填写注册信息
+            </span>
+        </li>
+        <li>
+            <i>
+                2
+            </i>
+            <span class="tsl" data-phase-id="r_p_fillUserInfo">
+                注册成功
+            </span>
+        </li>
+    </ol>
+</div>
+
+</div>
+
+
 <div class="register">
-    <form action="" method="get" id="form1" class="form">
+    <form action="regsucc.html" method="get" id="form1" class="form">
                 <p><label><span>*</span>用户名：</label><input type="text" class="inptxt" id="username" data="username" /><span class="tip tipusername">由字母、数字或"_"组成，长度不少于6位，不多于30位</span></p>
+                <span class="wrongtip"></span>
+                <p><label><span>*</span>邮箱：</label><input type="text" class="inptxt" id="useremail" data="useremail" /><span class="tip tipuseremail">必须为真实有效邮箱</span></p>
                 <span class="wrongtip"></span>
                 <p><label><span>*</span>密码：</label><input type="password" class="inptxt" id="password" data="pass" /><span class="tip tippass">不少于6位字符</span></p>
                 <span class="wrongtip"></span>
@@ -48,7 +88,7 @@
                 <p><label><span>*</span> 验证码：</label><input type="text"  class="inptxt code" id="code" data="code" /> <img src="images/auth.jpg" class="authcode" /></p>
                 <span class="wrongtip"></span>
                 <p><span class="agreement"><input type="checkbox" id="agreement" />&nbsp;我已阅读并同意遵守《<a href="javascript:;">服务条款</a>》</span></p>
-                <p><span class="agreement"><input class="btn reg_btn" type="button" value="同意协议并注册" /></span></p>
+                <p><span class="agreement"><input class="btn reg_btn" type="button" value="同意协议并注册" onclick="link_success()"/></span></p>
 
     </form>
 </div>

@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 /** public style **/
+body{background: url(../img/background.png)}
 *{ padding:0; margin:0; font-size:12px; font-family:'微软雅黑';}
 a{ text-decoration:none;}
 li{ list-style:none;}
