@@ -1,8 +1,8 @@
 /*
- *	soChange 1.5 - simple gallery with jQuery
- *	made by bujichong 2010-01-29
- *	作者：不羁虫  2010-01-29
- * http://hi.baidu.com/bujichong/
+ *	sun-tab
+ *	made by sunpengfei 2014-9-21
+ *	作者：孙鹏飞  2014-9-21
+ * http://ririlvxing.com
  */
  function link_success()
  {
