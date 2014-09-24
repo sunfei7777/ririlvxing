@@ -18,9 +18,29 @@ $("img.minus").bind("click",function(){
 });
 $(".right-list a").bind("click",function(){
 	var o = this.id;
-	$("#tab1").addClass("hov");
+	if(o=="tab1")
+		{
+			$("#tab1").addClass("hov");$("#div-1").css("display","block");
+			$("#tab2").removeClass("hov");$("#div-2").css("display","none");
+			$("#tab3").removeClass("hov");$("#div-3").css("display","none");
+
+		}
+	else if(o=="tab2")
+	{
+		$("#tab2").addClass("hov");$("#div-2").css("display","block");
+			$("#tab1").removeClass("hov");$("#div-1").css("display","none");
+			$("#tab3").removeClass("hov");$("#div-3").css("display","none");
+	}
+	else if(o=="tab3")
+	{
+		$("#tab3").addClass("hov");$("#div-3").css("display","block");
+			$("#tab1").removeClass("hov");$("#div-1").css("display","none");
+			$("#tab2").removeClass("hov");$("#div-2").css("display","none");
+	}
 });
-var l = $(".div-1 h2").val.length;
-alert(l);
+var l = $(".h2").html().length;
+if(l>20)
+	$(".h2").html($(".h2").html().substring(0,50)+"...");
+
 });
 
