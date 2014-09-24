@@ -3,6 +3,7 @@
 /** register style **/
 /** author sunpengfei **/
 .body{width: 100%;overflow-x:hidden;display: block; }
+
 .left-list{float: left;font-size: 16px;padding: 0px 30px 0px 0px;width: 240px;}
 .left-list p,a{font-size: 16px;}
 .left-list a{text-align:center;width: 164px;height: 30px;display: block;}
@@ -12,6 +13,7 @@
 .i-image{float: right;width:58px;height:36px;background:url(../img/u2.png) 0 -60px no-repeat;overflow:hidden;vertical-align:top;}
 /*去百度地图标识*/
 .anchorBL{display:none} 
+.jingdianp{float: left;font-size: 12px !important;padding-left: 5px;width: 180px;}
 
 .clear {clear: both;}
 
@@ -32,7 +34,8 @@
 .body .sidebar .hover .num,.body .sidebar li:hover .num{ background:url(../img/check_ico_current.png) left center no-repeat; color:#8ac453;}
 .body .sidebar .hover .arrow,.body .sidebar li:hover .arrow{ background:url(../img/arrow.png) left center no-repeat;}
 .body .minus ,.add{float: left;margin: 00px 10px 10px 35px;}
-
+.body .sidebar .pass .jingdiandiv{float: left;width: 200px;height: 20px;}
+.body .sidebar .pass img{float: left;width: 15px;height: 20px;}
 
 /*右面版*/
 .right-list a{width:33px;height:28px;padding-top:5px;border: 1px solid #80B66A;background: #EFF6EC;display: block;float: left;border-style: solid;padding-right:24px;padding-left:24px;}

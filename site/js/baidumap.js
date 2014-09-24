@@ -12,10 +12,10 @@ function f(data) {
 	map.addControl(new BMap.OverviewMapControl());//缩略图
 	map.addControl(new BMap.ScaleControl()); //比例尺
 	map.enableScrollWheelZoom();//鼠标滑轮缩放
-	var local = new BMap.LocalSearch(map, {
-		renderOptions:{map: map}
-	});
-	local.search("景点");
+	// var local = new BMap.LocalSearch(map, {
+	// 	renderOptions:{map: map}
+	// });
+	// local.search("景点");
 }
 
 
@@ -53,13 +53,16 @@ function search()
 				for (var i = 0; i < results.getCurrentNumPois(); i ++){
 					var obj=results.getPoi(i);  
             		var point = obj.point;  
-					if(i==0) {map.centerAndZoom(point, 15);}
-					makeMarkAndInfoWindow(point,"<b>"+obj.title+"</b>","地址:" + obj.address+"<br/>类型:" + obj.tags.join("，")
-						+"<br/>添加到：第<input type='text' id='day' style='width:15px;'>天<button type='button' onclick='javascript:addhtml((document.getElementById(\"day\").value),obj.title);'>确定</button>",i,map); 
+					if(i==0) {map.centerAndZoom(point, 10);}
+					makeMarkAndInfoWindow(point,"<b id='title'>"+obj.title+"</b>","地址:" + obj.address+"<br/>类型:" + obj.tags.join("，")
+						+"<br/>添加到：第<input type='text' id='day' style='width:15px;'>天<button type='button' onclick='javascript:addhtml((document.getElementById(\"day\").value),(document.getElementById(\"title\").innerHTML));'>确定</button>",i,map); 
 					s.push(results.getPoi(i).title + ", " + results.getPoi(i).address);
 				}
 				// search1(place,s);
-			}
+			}else{
+					alert("未检索到该关键字的地理位置信息");
+					local.search("北京");
+				}
 		}
 	};
 	var local = new BMap.LocalSearch(map, options);
@@ -71,8 +74,11 @@ function search()
 }
 function addhtml(day,title)
 {
-	alert(day);
-	$("#"+day).append(title);
+	if(day>$("ul.sidebar li").length)
+	{
+		alert("输入天数不存在，请确认后再输入！");
+	}
+	$("#"+day).append("<div class='jingdiandiv'><img src='img/icon.png'><p class='jingdianp'>"+title+"</p></div>");
 }
 // function search1(place,s)
 // {
