@@ -32,8 +32,8 @@
 .body .register-success img{display:inline-block;height: 40px;width: 50px;float: left;}
 .body .register-success .clearboth{clear: both;}
 .body .register-success .nextstep{margin-top: 10px;width: 1000px;}
-.body .register-success p{font-size: 15px;padding-left: 40px;}
+.body .register-success p{font-size: 15px;padding-left: 40px;margin-top: 60px;}
 .body .register-success .v-email{text-align: center;height: 40px;padding-top: 40px;}
 .body .register-success .v-email a{background: red;color: #fff;border: 1px solid red;font-size: 20px;border-radius: 4px;}
 .body .register-success .n-email .n-list{padding-left: 40px;}
-.body .register-success .n-email .n-list ul li{padding-top: 5px;}
+.body .register-success .n-email .n-list ul li{margin-top: 5px;}

@@ -1,12 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
-/** public style **/
+/** register style **/
+/** author sunpengfei **/
+
 body{background: url(../img/background.png)}
 *{ padding:0; margin:0; font-size:12px; font-family:'微软雅黑';}
-a{ text-decoration:none;}
+a{text-decoration:none;color:#222;}
+a:hover{color:#B70000;}
 li{ list-style:none;}
 img{ border:none;}
-.body{font: 12px/1.5 "宋体",tahoma,arial,sans-serif; position:relative;width:990px; margin:0 auto; overflow:hidden;margin-top: 50px;padding: 15px 20px;width: 1000px;}
+.body{font: 12px/1.5 "宋体",tahoma,arial,sans-serif; position:relative;width:1000px; margin:0 auto; overflow:hidden;margin-top: 50px;padding: 15px 20px;width: 1000px;}
 #body{color: #666;font: 12px/1.5 "宋体",tahoma,arial,sans-serif;}
 
 
@@ -27,27 +30,11 @@ img{ border:none;}
 .banner .input_search{margin-top:13px;height: 24px;padding: 3px;line-height: 24px;color: #333;float: left;width: 148px;outline-style: none;}
 
 .banner .menu{ float:left;margin-top:13px; }
-.banner .menu li{ float:left;line-height:33px; width:80px; height:33px; display:inline-block; background-color:#c4e3ff; border-radius:5px 5px 0 0; text-align:center; color:#333; font-size:14px; margin-right:2px; cursor:pointer; font-family:SimSun; }
-.banner .menu li a{ color:#333; font-family:SimSun; font-weight:bold; }
-.banner .menu li a:hover{ color:#fff;}
-.banner .menu li:hover,.banner .menu .hover{ 
-	background-color:#2a98e6;
-	background: -moz-linear-gradient(270deg, #3fadfa 0%, #0573c3 100%);/* FF3.6+ */
-	background: -webkit-gradient(linear, 270deg, color-stop(0%, #3fadfa), color-stop(100%, #0573c3));/* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(270deg, #3fadfa 0%, #0573c3 100%);/* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(270deg, #3fadfa 0%, #0573c3 100%);/* Opera 11.10+ */
-	background: -ms-linear-gradient(270deg, #3fadfa 0%, #0573c3 100%);/* IE10+ */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3fadfa', endColorstr='#0573c3', GradientType='1'); /* for IE */
-	background: linear-gradient(180deg, #3fadfa 0%, #0573c3 100%);/* W3C */
-}
-.banner .menu li:hover a{ color:#fff;}
-.banner .menu .hover a{ color:#fff;}
+.banner .menu li{ float:left;line-height:33px; width:80px; height:33px; display:inline-block; border-radius:5px 5px 0 0; text-align:center; color:#333; font-size:14px; margin-right:2px; cursor:pointer; font-family:SimSun; }
+.banner .menu li a{  font-family:SimSun; font-weight:bold;font-size: 16px; }
+.banner .menu li:hover,.banner .menu .hover{}
 .banner .adinfo{  line-height:50px; color:#fffe99; font-size:14px;}
 /** footer style **/
-
-
-
-
 
 .foot{ border-top:3px solid #c4e3ff; width:100%; margin-top:80px;}
 .footer{ width:990px; margin:0 auto; text-align:center; line-height:25px; color:#999; padding:10px 0;}

@@ -1,3 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+/** register style **/
+/** author sunpengfei **/
 .login-logo{float:left;margin: 30px 70px}
 .login-pig{float:left;margin: 80px 0px}
 .login-pig img{width: 500px;height: 300px;}

@@ -4,8 +4,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" href="img/icn.png" />
 <title>日日旅行，旅行日上日日旅行</title>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=t7FoSCKMKQaiH3Ccc2B4G2gw"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js"></script>
 <link href="css/public.css" type="text/css" rel="stylesheet" />
-<link href="css/destination.css" type="text/css" rel="stylesheet" />
+<link href="css/settrip.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="js/baidumap.js"></script>
+<script type="text/javascript" src="js/settrip.js"></script>
+
+<script type="text/javascript">
+window.onload=function(){
+      f(1);
+     }
+</script>
 </head>
 
 <body>
@@ -40,11 +52,36 @@
         </div>
     </div>
 </div>
-
-
 <br class="clear"/>
-
-
+<!-- 行程目录 -->
+<div class="left-list">
+    <div class="search">
+    <input id="search-place" placeholder="输入你感兴趣的城市或景点" type="text"><button id="search-btn" class="i-image"></button></div><br/>
+    <ul class="sidebar left">
+        <li class="pass"><div class="item"><a href="#">第1天 (0)</a></div><div class="num">1</div><div class="arrow"></div></li>
+        <li class="pass"><div class="item"><a href="#">第2天 (0)</a></div><div class="num">2</div><div class="arrow"></div></li>
+        <li class="pass"><div class="item"><a href="#">第3天 (0)</a></div><div class="num">3</div><div class="arrow"></div></li>
+        <li class="hover"><div class="item"><a href="#">第4天 (0)</a></div><div class="num">4</div><div class="arrow"></div></li>
+        <li><div class="item"><a href="#">第5天 (0)</a></div><div class="num">5</div><div class="arrow"></div></li>
+    </ul>
+    <img src="img/minus.png" class="minus" ><img src="img/plus.png" class="add" >
+</div>
+<!-- 百度地图 -->
+<div id="allmap" ></div>
+<!-- 路线搜索 -->
+<div class="right-list">
+    <div id="tab">
+        <a href="#" id="tab1">景点</a>
+        <a href="#" id="tab2">酒店</a>
+        <a href="#" id="tab3">路线</a>
+    </div>
+    <div id="div-1">
+        <img src="img/sanya.jpg">
+        <p>三亚</p>
+        <h2>三亚，（Sanya City）位于海南岛的最南端，是中国最南部的热带滨海旅游城市，全国空气质量最好的城市，全国最长寿地区（平均寿命80岁）。 三亚市别称鹿城，又被称为“东方夏威夷”，位居中国四大一线旅游城市“三威杭厦”之首，它拥有全海南岛最美丽的海滨风光。东邻陵水县，西接乐东县，北毗保亭县，南临南海。陆地总面积1919.58平方公里，海域总面积6000平方公里，其中规划市区面积约37平方公里。</h2>
+    </div>
+</div>
+<br class="clear"/>
 
 <div class="foot">
     <div class="footer">
@@ -53,13 +90,5 @@
     <p>地址：哈尔滨市南岗区南通大街145号 Email：2629960826@qq.com</p>
 </div>
 </div>
-<script type="text/javascript">
-    $('#change_4 .a_bigImg img').soChange({
-        thumbObj:'#change_4 .ul_change_a1 img',//导航图标
-        botPrev:'#change_4 .a_last',
-        botNext:'#change_4 .a_next'
-    });
-
-</script>
 </body>
 </html>
