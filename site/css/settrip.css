@@ -42,5 +42,5 @@
 .right-list  h2{float:left;display: block;}
 .right-list  h2{width: 150px;height: 70px;overflow: hidden;}
 .right-list #div-3 .search{float:left;border: 1px solid #C2C2BD;width: 230px;border-radius: 5px;height: 30px;}
-.right-list #div-3 .search input{float:left;width: 100px;border: 1px solid #FFF;padding: 9px 1px 8px 0px;text-indent: 5px;height: 10px;}
-#mid-search {float: left;cursor: pointer;width: 21px;height: 22px;background: url('http://webmap1.map.bdimg.com/newmap/static/common/images/index_f7f0192.png') no-repeat scroll -200px -126px transparent;margin: 7px 0px 0px 0px;display: inline-block;}
+.right-list #div-3 .search input{float:left;width: 100px;border: 1px solid #FFF;padding: 9px 1px 8px 0px;text-indent: 5px;height: 11px;}
+#mid-search {float: left;cursor: pointer;width: 21px;height: 22px;background: url('http://webmap1.map.bdimg.com/newmap/static/common/images/index_f7f0192.png') no-repeat scroll -200px -126px transparent;margin: 5px 0px 0px 0px;display: inline-block;}
